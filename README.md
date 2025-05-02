@@ -1,53 +1,66 @@
-# NetClus Plugin for QGIS
-
+# NetClus — Network-Based Clustering Plugin for QGIS
 ![icon](https://github.com/user-attachments/assets/755af5aa-8d93-496f-8d26-aec842f3d130)
 
 [QGIS](https://img.shields.io/badge/QGIS-3.x-green.svg)
 ![License](https://img.shields.io/badge/license-GPL--2.0--or--later-blue)
 
-**NetClus** adalah plugin QGIS untuk melakukan *clustering spasial* berdasarkan **jaringan jalan**, bukan jarak Euclidean. Plugin ini mendukung data besar (>1.000 fitur) dengan pendekatan hybrid (KMeans + Agglomerative Clustering berbasis graph), serta mendukung batasan jarak maksimal antar elemen dalam klaster (*optional max distance*).
+**NetClus** is a QGIS plugin for performing *spatial clustering* based on **road network distance**, not Euclidean distance. It supports both small and large datasets (>1,000 features) using a hybrid approach (**KMeans + Graph-based Agglomerative Clustering**) and includes an *optional maximum distance constraint* within clusters.
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
-- Clustering spasial berdasarkan jarak tempuh jaringan jalan (bukan jarak lurus)
-- Mode **Agglomerative langsung** untuk data kecil
-- Mode **Hybrid** (KMeans → Agglomerative) untuk data besar
-- Opsi **Max Distance Constraint** untuk membatasi jarak maksimal dalam satu klaster
-- Mendukung input point atau polygon (polygon otomatis diambil centroid-nya)
-- Hasil bisa langsung ditampilkan di QGIS dan diekspor sebagai shapefile
+- Clustering based on road network travel distance (instead of straight-line/Euclidean distance)
+- **Direct Agglomerative** mode for small datasets
+- **Hybrid Mode**: `KMeans → Agglomerative` for large datasets
+- Optional **Max Distance Constraint** to limit the distance between cluster members
+- Supports **point** and **polygon** input (polygon centroids are automatically used)
+- Output is added directly to QGIS and can be exported to shapefile (`.shp`)
+
+---
+
+## 🧩 How to Use
+
+1. Open QGIS and activate the **NetClus** plugin from the Plugin Manager.
+2. Select input layers:
+   - **Point / Polygon Layer**: features to be clustered (e.g., houses, facilities, schools, etc.)
+   - **Road Network Layer**: must be a *LineString* vector layer
+3. Choose the number of clusters or enable the `Max Distance` option.
+4. Click **"Start Clustering"**.
+5. The result will be added to the QGIS map as a new layer named `Clustering_Result`.
 
 ---
 
-## 🧩 Cara Menggunakan
+## 🛠️ Dependencies
 
-1. Buka QGIS dan aktifkan plugin NetClus
-2. Pilih:
-   - **Layer Titik/Polygon** (misalnya lokasi rumah, fasilitas, dll)
-   - **Layer Jaringan Jalan** (harus berupa *LineString*)
-3. Pilih jumlah klaster atau aktifkan opsi `Max Distance`
-4. Klik tombol **"Start Clustering"**
-5. Hasil ditampilkan sebagai layer baru bernama `Clustering_Result`
+- Python ≥ 3.7
+- QGIS ≥ 3.16
+- Libraries: `networkx`, `numpy`, `scipy`, `pandas`, `scikit-learn`, `shapely`, `tqdm`
 
 ---
-🛠️ Dependensi
-Python ≥ 3.7
 
-QGIS ≥ 3.16
+## 📄 License
 
-networkx, numpy, scipy, pandas, sklearn, shapely, tqdm
-
-📄 Lisensi
-GNU General Public License v2.0 or later
+**GNU General Public License v2.0 or later**  
 Copyright (C) 2025 — Surya Hafizh
 
-🤝 Kontribusi
-Pull request sangat disambut.
-Silakan laporkan issue, bug, atau ide pengembangan melalui tab Issues di GitHub.
+---
 
-🧠 Pengembang
-Surya Hafizh
-🌐 Email: suryahafizh979@gmail.com
-📍 Prodi Geografi, Fakultas Ilmu Sosial, Universitas Negeri Padang
-📌 Plugin dikembangkan untuk mendukung analisis spasial berbasis jaringan jalan pada aplikasi nyata seperti pemetaan fasilitas, layanan publik, pnegiriman barang, dan mitigasi bencana.
+## 🤝 Contributing
+
+Pull requests are welcome.  
+Feel free to report bugs, feature suggestions, or ideas via the [Issues tab](https://github.com/your-username/netclus/issues).
+
+---
+
+## 👤 Developer
+
+**Surya Hafizh**  
+📧 suryahafizh979@gmail.com  
+📍 Department of Geography, Faculty of Social Sciences, Universitas Negeri Padang  
+
+This plugin was developed to support real-world **network-based spatial analysis**, with applications in:
+- Public facility planning
+- Service delivery optimization
+- Disaster mitigation using road network topology
+
