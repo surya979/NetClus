@@ -13,7 +13,7 @@ email=suryahafizh979@gmail.com
 about=This plugin can be used for cluster analysis based on road networks using the agglomerative cluster algorithm. This plugin can be used to help analyze the coverage of services such as delivery, postal, water services, garbage and so on.
 
 tracker=http://bugs
-repository=http://repo
+repository=https://github.com/surya979/NetClus.git
 # End of mandatory metadata
 
 # Recommended items:
