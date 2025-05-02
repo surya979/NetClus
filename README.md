@@ -49,5 +49,5 @@ Silakan laporkan issue, bug, atau ide pengembangan melalui tab Issues di GitHub.
 🧠 Pengembang
 Surya Hafizh
 🌐 Email: suryahafizh979@gmail.com
-📍 Prodi Geografi, Fakultas Ilmu Sosial, Universitas Megeri Padang
+📍 Prodi Geografi, Fakultas Ilmu Sosial, Universitas Negeri Padang
 📌 Plugin dikembangkan untuk mendukung analisis spasial berbasis jaringan jalan pada aplikasi nyata seperti pemetaan fasilitas, layanan publik, pnegiriman barang, dan mitigasi bencana.
