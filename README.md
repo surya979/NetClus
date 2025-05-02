@@ -1,5 +1,7 @@
 # NetClus Plugin for QGIS
 
+![icon](https://github.com/user-attachments/assets/755af5aa-8d93-496f-8d26-aec842f3d130)
+
 [QGIS](https://img.shields.io/badge/QGIS-3.x-green.svg)
 ![License](https://img.shields.io/badge/license-GPL--2.0--or--later-blue)
 
@@ -29,3 +31,23 @@
 5. Hasil ditampilkan sebagai layer baru bernama `Clustering_Result`
 
 ---
+🛠️ Dependensi
+Python ≥ 3.7
+
+QGIS ≥ 3.16
+
+networkx, numpy, scipy, pandas, sklearn, shapely, tqdm
+
+📄 Lisensi
+GNU General Public License v2.0 or later
+Copyright (C) 2025 — Surya Hafizh
+
+🤝 Kontribusi
+Pull request sangat disambut.
+Silakan laporkan issue, bug, atau ide pengembangan melalui tab Issues di GitHub.
+
+🧠 Pengembang
+Surya Hafizh
+🌐 Email: suryahafizh979@gmail.com
+📍 Prodi Geografi, Fakultas Ilmu Sosial, Universitas Megeri Padang
+📌 Plugin dikembangkan untuk mendukung analisis spasial berbasis jaringan jalan pada aplikasi nyata seperti pemetaan fasilitas, layanan publik, pnegiriman barang, dan mitigasi bencana.
